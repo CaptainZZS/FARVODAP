@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Chrome">
+    <meta name="viewport" content="width=device-width,initial-scale=0.8,maximum-scale=1.0,minimum-scale=1.0,user-scalable=yes">
+    <title>信息查看</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+<table  border="1">
+  <thead>
+    <tr>
+        <th>城市</th>
+        <th>招聘岗位</th>
+        <th>薪资</th>
+        <th>工作经验</th>
+        <th>学历</th>
+        <th>所招人数</th>
+        <th>专业要求</th>
+        <th>职位信息</th>
+        <th>公司类型</th>
+        <th>公司规模</th>
+        <th>所属行业</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in list_data %}
+        <tr>
+            {% for cell in row %}
+                <td>{{ cell }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+</body>
+</html>

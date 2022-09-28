@@ -1,0 +1,146 @@
+*,body{
+    padding: 0;	
+    margin: 0;
+    color: #ffffff;
+    font-family: "微软雅黑";
+}
+
+html{
+    font-size:62.5%;
+}
+
+body {
+    font:normal 100% Arial,sans-serif;font-size:14px; font-size:1.4rem; 
+} 
+
+body{
+    position: relative;
+    background: url(../images/bj.jpg) top center;
+    background-size: 100%;
+}
+
+.top{
+    height: 12rem;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    font-size: 7rem;
+    color: #00e7fc;
+    font-weight: 800;
+    overflow: hidden;
+}
+
+.s{
+    height: 0.7rem;
+    width: 150rem;
+    background-color: #00e7fc;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    margin-top: 1rem;
+}
+
+.content{
+    margin-top: 10rem;
+    position: relative;
+}
+
+.content-left{
+    float: left;
+    margin-left: 5rem;
+}
+
+.earth{
+    width: 30rem;
+}
+
+@keyframes move{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(3600000deg);
+    }
+}
+
+.earth{
+    animation-name: move;
+    animation-duration: 140000s;
+    animation-timing-function: linear;
+}
+
+.content-right{
+    float: left;
+    /* background-color: #00e7fc; */
+    height: 30rem;
+    width: 150rem;
+    position: absolute;
+    left: 40rem;
+}
+
+.a{
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+.city{
+    text-decoration: none;
+    display: block;
+    float: left;
+    margin-bottom: 7rem;
+    margin-right: 6rem;
+    /* background-color: purple; */
+    width: 15rem;
+    height: 6.5rem;
+    border: 0.7rem solid #00e7fc;
+    border-radius: 2.4rem;
+    color: #00e7fc;
+    font-size: 3.2rem;
+    text-align: center;
+    line-height: 6.5rem;
+}
+
+.city:hover{
+    background-color: skyblue;
+    color: #ffffff;
+}
+
+select{
+    background: transparent;
+    color: #00e7fc;
+    border:2px solid #00e7fc;
+    border-radius: 1rem;
+    height: 7rem;
+    width: 20rem;
+    margin-right: 10rem;
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+option{
+    color: black;
+    outline: none;
+    cursor: pointer;
+}
+
+.foot{
+    margin-top: 55rem;
+    margin-left: 30rem;
+}
+
+.tj{
+    width: 12rem;
+    height: 7rem;
+    position: absolute;
+    cursor: pointer;
+    background-color:transparent;
+    color: #00e7fc;
+    border-radius: 5rem;
+    font-size: 2.5rem;
+    outline: none;
+    border:0.5rem solid #00e7fc;
+}
+
+.tj:hover{
+    background-color: #00e7fc;
+    color: #fff;
+}
